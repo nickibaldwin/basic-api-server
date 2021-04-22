@@ -17,7 +17,7 @@ router.get('/animal', getAnimals);
 router.get('/animal/:id', getOneAnimal);
 router.post('/animal', createAnimal);
 router.put('/animal/:id', updateAnimal);
-// router.delete('/animal/:id', deleteAnimal);
+router.delete('/animal/:id', deleteAnimal);
 
 // // RESTful route handlers
 

@@ -29,23 +29,24 @@ class AnimalsModel {
 
   //TODO
   update(id, obj) {
-      if (id) {
-          let item = this.db.find(record => record.id === id);
-        const index = this.db.indexOf(item);
-        this.db[index] = {
-            id: id,
-            record:obj
-        };
-}
+    if (id) {
+      let item = this.db.find(record => record.id === id);
+      const index = this.db.indexOf(item);
+      this.db[index] = {
+        id: id,
+        record:obj
+      };
+    }
   }
 
   //TODO 
   delete(id) {
-      if (id) {
-        let item = this.db.find(record => record.id === id);
-        const index = this.db.indexOf(item);
-        this.db.splice(index, 1);
+    if (id) {
+      let item = this.db.find(record => record.id === id);
+      const index = this.db.indexOf(item);
+      this.db.splice(index, 1);
+    }
   }
 }
 
-module.exports = AnimalsModel;
+module.exports = AnimalsModel; 
